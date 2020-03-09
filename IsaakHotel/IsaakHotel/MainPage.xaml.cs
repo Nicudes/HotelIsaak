@@ -16,6 +16,8 @@ namespace IsaakHotel
         public MainPage()
         {
             InitializeComponent();
+            //Testkommentar by André
+
         }
     }
 }
