@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace IsaakHotelStaff.AdminPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BookingsActivePage : ContentPage
+    public partial class AdminHomePage : TabbedPage
     {
-        public BookingsActivePage()
+        public AdminHomePage()
         {
             InitializeComponent();
         }

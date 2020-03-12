@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace IsaakHotelStaff.AdminPages
+namespace IsaakHotelStaff.CleanerPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class BookingHistoryPage : ContentPage
+    public partial class CleanerHomePage : TabbedPage
     {
-        public BookingHistoryPage()
+        public CleanerHomePage()
         {
             InitializeComponent();
         }
