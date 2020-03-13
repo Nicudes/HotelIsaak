@@ -19,5 +19,31 @@ namespace IsaakHotel
             //Testkommentar by André
 
         }
+
+        private async void btn_NewBooking(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new BookPage()));
+
+        }
+
+        private async void btn_SignIn(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new CustomerPage()));
+        }
+
+        private async void btn_RegisterNewUser(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new RegisterNewUser()));
+        }
+
+        private async void btn_Reviews(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new Reviews()));
+        }
+
+        private async void btn_AboutUs(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new BookPage()));
+        }
     }
 }

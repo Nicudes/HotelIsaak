@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="IsaakHotel.ConfirmationPage">
+    <ContentPage.Content>
+        <StackLayout>
+            
+			
+			<Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+			<Entry Text="Login_user " Placeholder="Enter username"></Entry>
+			<Entry Text="Login_pass " Placeholder="Enter password"></Entry>
+
+			<Button x:Name="LoginButton" Text="No" Clicked="btn_Login"></Button>
+			<Button Text="Register new user" Clicked="btn_RegisterNewUser"></Button>
+			<Button x:Name="Payment" Text="Not Paid" Clicked="btn_Pay"></Button>
+
+
+			<Label Text="Booking Summary!"> </Label>
+
+			<Label Text="Payment Summary!"></Label>
+
+			<Button Text="Back to start" Clicked="btn_BackToStart"></Button>
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -8,9 +8,30 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+
+		<Image Source="https://lh3.googleusercontent.com/proxy/Uj78kYNE9nG7Kt0o-lG-xfWoXvnCPMvOCHK3E5xNCMc8i3jnWL2Jo7NzJB6NLPi7xI5wPU-66zlUIud2-u7BQnV3mP6LUM4S4JjJPKgFchyU8-mU7w2kpeXV"
+       Aspect="AspectFit"
+       HorizontalOptions="Center" />
+		
+		<Button Text="New booking" Clicked="btn_NewBooking"> </Button>
+
+		<Button Text="Sign in" Clicked="btn_SignIn"></Button>
+		<Button Text="RegisterNewUser" Clicked="btn_RegisterNewUser"></Button>
+		<Button Text="Reviews" Clicked="btn_Reviews"></Button>
+		<Button Text="About Us" Clicked="btn_AboutUs"></Button>
+
+		<!--<ListView>
+				<ListView.ItemsSource>
+					<x:Array Type="{x:Type x:String}">
+						<x:String>About Us</x:String>
+						<x:String>SignIn</x:String>
+						<x:String>Reviews</x:String>
+						<x:String>RegisterNewUser</x:String>
+				</x:Array>
+				</ListView.ItemsSource>
+			</ListView>-->
+
+
+		</StackLayout>
 
 </ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="IsaakHotel.CustomerPage">
+    <ContentPage.Content>
+        <StackLayout>
+			
+            
+			<Label Text="Welcome to CustomerPage!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+			<Button Text="Home" Clicked="btn_Home"> </Button>
+			<Button Text="New Booking" Clicked="btn_NewBooking"></Button>
+			<Button Text="Updateinfo" Clicked="btn_UpdateInfo"></Button>
+			<Button Text="User Bookings" Clicked="btn_UserBookings"></Button>
+
+
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>
