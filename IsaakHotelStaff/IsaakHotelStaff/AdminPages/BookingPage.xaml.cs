@@ -19,17 +19,25 @@ namespace IsaakHotelStaff.AdminPages
 
         private void UpcomingButton_Clicked(object sender, EventArgs e)
         {
-            upcomingButton.IsVisible = true;
+            upcomingStackLayout.IsVisible = true;
+            activeStackLayout.IsVisible = false;
+            historyStackLayout.IsVisible = false;
             
         }
 
         private void ActiveButton_Clicked(object sender, EventArgs e)
         {
+            upcomingStackLayout.IsVisible = false;
+            activeStackLayout.IsVisible = true;
+            historyStackLayout.IsVisible = false;
 
         }
 
         private void HistoryButton_Clicked(object sender, EventArgs e)
         {
+            upcomingStackLayout.IsVisible = false;
+            activeStackLayout.IsVisible = false;
+            historyStackLayout.IsVisible = true;
 
         }
     }

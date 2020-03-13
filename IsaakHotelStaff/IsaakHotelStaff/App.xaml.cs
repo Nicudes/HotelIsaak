@@ -10,7 +10,7 @@ namespace IsaakHotelStaff
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new CleanerPages.CleanerHomePage());
         }
 
         protected override void OnStart()

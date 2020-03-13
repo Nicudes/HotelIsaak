@@ -7,30 +7,7 @@
              x:Class="IsaakHotelStaff.MainPage">
 
     <ContentPage.Content>
-        <Grid Margin="16,0"
-              BindingContext="{StaticResource vm}">
-
-            <Label Text="Staff Login"
-                   HorizontalOptions="Center"
-                   FontSize="30"/>
-            <StackLayout x:Name="loginStackLayout"
-                         VerticalOptions="Center"
-                         IsVisible="true">
-                <Entry Placeholder="Email"
-                       Keyboard="Email"
-                       Text="{Binding Email, Mode=TwoWay}"/>
-                <Entry Placeholder="Password"
-                       Text="{Binding Password,Mode=TwoWay}"
-                       IsPassword="True"/>
-                <Button Text="login"
-                        Command="{Binding LoginCommand}"
-                        CommandParameter="{Binding CanLogin}"/>
-                <StackLayout Orientation="Horizontal">
       
-                   
-                </StackLayout>
-            </StackLayout>
-        </Grid>
     </ContentPage.Content>
 
 </ContentPage>
