@@ -6,8 +6,18 @@
              mc:Ignorable="d"
              x:Class="IsaakHotelStaff.MainPage">
 
-    <ContentPage.Content>
-      
-    </ContentPage.Content>
+    <StackLayout>
+        <Label Text="Staff Portal" FontSize="45" HorizontalTextAlignment="Center" Margin="0,40,0,0"/>
+        <Label Text="Username" Margin="40,100,40,0" FontSize="Large"/>
+        <Entry Placeholder="Enter Username" Margin="40,10,40,0"/>
+        <Label Text="Password" Margin="40,10,40,0" FontSize="Large"/>
+        <Entry Placeholder="Enter Password" Margin="40,10,40,0"/>
+
+
+
+        <Button x:Name="AdminSignInButton" Text="Sign in" Margin="70" Clicked="AdminSignInButton_Clicked"/>
+
+
+    </StackLayout>
 
 </ContentPage>

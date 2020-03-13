@@ -17,5 +17,10 @@ namespace IsaakHotelStaff
         {
             InitializeComponent();
         }
+
+        private void AdminSignInButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
