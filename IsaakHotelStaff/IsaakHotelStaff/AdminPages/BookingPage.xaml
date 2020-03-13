@@ -26,13 +26,12 @@
                 Text="History"
                     Clicked="HistoryButton_Clicked"/>
             </StackLayout>
-
             <!-- Code for Upcoming Bookings -->
-            <StackLayout x:Name="upcomingStackLayout"
-                     VerticalOptions="Center"
-                     IsVisible="False">
-                <Button Text="Upcoming"/>
-            </StackLayout>
+            <ListView x:Name="upcomingStackLayout"
+                        VerticalOptions="CenterAndExpand"  
+                       IsVisible="True">
+      
+            </ListView>
 
             <!-- Code for Active Bookings -->
             <StackLayout x:Name="activeStackLayout"
@@ -46,8 +45,7 @@
                      VerticalOptions="Center"
                      IsVisible="False">
                 <Button Text="History"/>
-            </StackLayout>  
-
+            </StackLayout>
 
         </Grid>
     </ContentPage.Content>
