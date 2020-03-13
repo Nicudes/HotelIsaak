@@ -16,5 +16,7 @@ namespace IsaakHotelStaff.CleanerPages
         {
             InitializeComponent();
         }
+
+    
     }
 }

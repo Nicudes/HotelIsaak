@@ -5,11 +5,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="IsaakHotelStaff.AdminPages.CustomerPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Label Text="Customers" HorizontalOptions="Center" FontSize="40"/>
+        <CheckBox x:Name="termsOfServiceCheckBox" />
+        <SelectableItemsView>
+            <!--Här ska det vara massa customers med id och selectable
+            Man ska även kunna trycka "Edit"-->
+            
+        </SelectableItemsView>
+    </StackLayout>
+
+
 </ContentPage>

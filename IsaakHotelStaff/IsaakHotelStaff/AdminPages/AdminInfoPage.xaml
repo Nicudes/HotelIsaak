@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="IsaakHotelStaff.AdminPages.AdminInfoPage">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello {user}!" HorizontalOptions="Center"
+                   Margin="0,40,0,0"
+                   FontSize="40"/>
+            <Label Text="Latest info" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   Margin="0,40,0,0"
+                   FontSize="Large"/>
+
+
+            <Label x:Name="AdminInfoDateText" Text="2020-03-13"
+                   Margin="30,0,30,0" FontAttributes="Italic"/>
+            <Label x:Name="AdminInfoText"
+                   Text="Due to the Corona Virus (COVID-19) we have decided to apply some derp rules
+                   . For example wash your hands every 10th minute and don't shake hands with other people.
+                   Here is some more derp text to make it look like an important info page" 
+                   Margin="30,0,30,5"/>
+
+            <Button x:Name="InfoToAdminButton" Text="Administration" Margin="40,100,40,0"
+                    Clicked="InfoToAdminButton_Clicked"/>
+            <Button x:Name="SignOutButton" 
+                    Text="Sign Out" Margin="40,10,40,0"
+                    Clicked="SignOutButton_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
