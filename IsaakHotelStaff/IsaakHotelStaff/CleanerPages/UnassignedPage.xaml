@@ -5,9 +5,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="IsaakHotelStaff.CleanerPages.UnassignedPage">
+    <Grid Margin=" 20,20,20,20">
+        <Switch x:Name="assignSwitch"
+                Grid.Column="1"/>
 
-
-
-
+        <Label Text="Room1 2020-03-13">
+            <Label.Triggers>
+                <DataTrigger TargetType="Label"
+                             Binding="{Binding Source={x:Reference assignSwitch}, Path=IsToggled}"
+                             Value="True">
+                    <Setter Property="FontAttributes"
+                            Value="Italic, Bold"/>
+                    <Setter Property="FontSize"
+                            Value="Large"/>
+                </DataTrigger>
+            </Label.Triggers>   
+            
+        </Label>
+    </Grid>
 
 </ContentPage>
