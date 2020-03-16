@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IsaakHotel.ViewModel.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,17 @@ namespace IsaakHotel
         public CustomerPage()
         {
             InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (!Auth.IsAuthenticated())
+            {
+                await Task.Delay(300);
+                await Navigation.PushAsync(new RegisterNewUser());
+            }
         }
 
         private async void btn_Home(object sender, EventArgs e)

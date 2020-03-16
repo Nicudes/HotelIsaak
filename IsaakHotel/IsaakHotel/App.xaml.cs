@@ -10,7 +10,7 @@ namespace IsaakHotel
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new IsaakHotel.MainPage());
+            MainPage = new NavigationPage(new CustomerPage());
     }
 
         protected override void OnStart()

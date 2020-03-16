@@ -74,14 +74,22 @@ namespace IsaakHotel.ViewModel
             }
             else
             {
-                await Auth.RegisterUser(Name, Email, Password);
+                bool result = await Auth.RegisterUser(Name, Email, Password);
+                if (result)
+                {
+                   await App.Current.MainPage.Navigation.PopAsync();
+                }
             }
             
         }
 
         private async void Login(object parameter)
         {
-            await Auth.AuthenticateUser(Email, Password);
+           bool result = await Auth.AuthenticateUser(Email, Password);
+            if (result)
+            {
+                await App.Current.MainPage.Navigation.PopAsync();
+            }
         }
         private bool RegisterCanExecute(object parameter)
         {

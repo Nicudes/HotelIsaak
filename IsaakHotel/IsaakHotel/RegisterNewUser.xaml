@@ -20,7 +20,8 @@
 
             <StackLayout x:Name="loginStackLayout"
                          VerticalOptions="Center"
-                         IsVisible="True">
+                         IsVisible="True"
+                         BindingContext="{StaticResource vm}">
                 <Entry Placeholder="Email"
                        Keyboard="Email"
                        Text="{Binding Email, Mode=TwoWay}"/>
@@ -69,7 +70,8 @@
 
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Already have an account?"/>
-                    <Label Text="Login">
+                    <Label Text="Login"
+                           TextColor="Blue">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Tapped="LoginLabel_Tapped"/>
                         </Label.GestureRecognizers>

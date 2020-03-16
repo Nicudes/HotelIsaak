@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="IsaakHotel.CustomerPage">
+             x:Class="IsaakHotel.CustomerPage"
+             Title="My User Page">
     <ContentPage.Content>
         <StackLayout>
 			
@@ -13,12 +14,12 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-			<Button Text="Home" Clicked="btn_Home"> </Button>
-			<Button Text="New Booking" Clicked="btn_NewBooking"></Button>
-			<Button Text="Updateinfo" Clicked="btn_UpdateInfo"></Button>
-			<Button Text="User Bookings" Clicked="btn_UserBookings"></Button>
+            <Button Text="Home" Clicked="btn_Home"/>
+            <Button Text="New Booking" Clicked="btn_NewBooking"/>
+            <Button Text="Updateinfo" Clicked="btn_UpdateInfo"/>
+            <Button Text="User Bookings" Clicked="btn_UserBookings"/>
 
 
-		</StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
