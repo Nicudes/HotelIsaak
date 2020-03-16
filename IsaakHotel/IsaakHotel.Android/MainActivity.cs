@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+
 namespace IsaakHotel.Droid
 {
     [Activity(Label = "IsaakHotel", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -29,5 +30,31 @@ namespace IsaakHotel.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        //public FirebaseFirestore GetFirestore()
+        //{
+        //    var app = FirebaseApp.InitializeApp(this);
+            
+
+        //    if (app == null)
+        //    {
+        //        var options = new FirebaseOptions.Builder()
+        //            .SetProjectId("isaachotel-b0409")
+        //            .SetApplicationId("isaachotel-b0409")//kanske fel
+        //            .SetApiKey("AIzaSyDiM6f_NRZUF5noVcFy1yJM_mZgstGcf5Q")
+        //            .SetDatabaseUrl("https://isaachotel-b0409.firebaseio.com")
+        //            .SetStorageBucket("isaachotel-b0409.appspot.com")
+        //            .Build();
+
+        //        app = FirebaseApp.InitializeApp(this, options); //fore app to initialize
+        //        database = FirebaseFirestore.GetInstance(app);
+        //    }
+        //    else
+        //    {
+        //        database = FirebaseFirestore.GetInstance(app);
+        //    }
+
+        //    return database;
+        //}
     }
 }

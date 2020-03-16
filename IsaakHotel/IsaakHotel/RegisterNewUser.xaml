@@ -4,25 +4,39 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:vm="clr-namespace:IsaakHotel.ViewModel"
              x:Class="IsaakHotel.RegisterNewUser">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:LoginVM x:Key="vm">
+                
+            </vm:LoginVM>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
 		
 		
-		<StackLayout Margin="20,35,20,20">
+		<StackLayout Margin="20,35,20,20" BindingContext="{StaticResource vm}">
 			
 			
             <Label Text="Welcome to RegisterNewUser!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-			<Entry Text="Name " Placeholder="Enter name here"></Entry>
-			<Entry Text="Phone no " Placeholder="Enter phone number"></Entry>
-			<Entry Text="Mail " Placeholder="Enter mail here"></Entry>
-			<Entry Text="Nationality " Placeholder="Enter nationality here"></Entry>
+			<Entry Text="{Binding Name, Mode=TwoWay}" Placeholder="Name"></Entry>
+			<Entry Text="{Binding Email , Mode=TwoWay}" Placeholder="Email" Keyboard="Email"></Entry>
+            <Entry Text="{Binding Password , Mode=TwoWay}" Placeholder="Password" IsPassword="True"></Entry>
+			<Entry Text="{Binding ConfirmPassword, Mode=TwoWay} " Placeholder="ConfirmPassword" IsPassword="True"></Entry>
 
-			<Button Text="Create user" Clicked="btn_CreateUser"> </Button>
+			<Button Text="Register"
+                    CommandParameter="{Binding CanRegister}" 
+                    Command="{Binding RegisterCommand}"> </Button>
+
+            <!--<Button Text="Sign In" Command="{Binding CanL}"></Button>-->
 
 
-		</StackLayout>
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+    
