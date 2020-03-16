@@ -18,10 +18,16 @@ namespace IsaakHotel
             InitializeComponent();
         }
 
-        //private async void btn_CreateUser(object sender, EventArgs e)
-        //{
-        //    await Navigation.PushAsync(new NavigationPage(new MainPage()));
-        //}
+        private void RegisterLabel_Tapped(object sender, EventArgs e)
+        {
+            registerStackLayout.IsVisible = true;
+            loginStackLayout.IsVisible = false;
+        }
 
+        private void LoginLabel_Tapped(object sender, EventArgs e)
+        {
+            registerStackLayout.IsVisible = false;
+            loginStackLayout.IsVisible = true;
+        }
     }
 }
