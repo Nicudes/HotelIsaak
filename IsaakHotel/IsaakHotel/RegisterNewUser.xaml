@@ -68,7 +68,7 @@
                     CommandParameter="{Binding CanRegister}" 
                     Command="{Binding RegisterCommand}"/>
 
-<<<<<<< HEAD
+
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Already have an account?"/>
                     <Label Text="Login"
@@ -77,12 +77,12 @@
                             <TapGestureRecognizer Tapped="LoginLabel_Tapped"/>
                         </Label.GestureRecognizers>
                     </Label>
-=======
-			<Entry Text="Name "  Placeholder="Enter name here"></Entry>
-			<Entry Text="Phone no " Placeholder="Enter phone number"></Entry>
-			<Entry Text="Mail " Placeholder="Enter mail here"></Entry>
-			<Entry Text="Nationality " Placeholder="Enter nationality here"></Entry>
->>>>>>> Lorin
+                    
+		            <Entry Text="Name "  Placeholder="Enter name here"></Entry>
+		            <Entry Text="Phone no " Placeholder="Enter phone number"></Entry>
+		        	<Entry Text="Mail " Placeholder="Enter mail here"></Entry>
+		        	<Entry Text="Nationality " Placeholder="Enter nationality here"></Entry>
+
 
                 </StackLayout>
 
