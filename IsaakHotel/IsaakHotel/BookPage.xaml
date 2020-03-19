@@ -5,24 +5,38 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="IsaakHotel.BookPage">
-    <ContentPage.Content>
-        <StackLayout>
-            
-			
-			<Label Text="Welcome to BookPage!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ScrollView>
 
-			<Button Text="Show Availible rooms" Clicked="btn_AvailibleRooms"></Button>
+        <StackLayout Margin="10">
+            <Label Text="Welcome to BookPage"
+               Style="{DynamicResource TitleStyle}"
+               Margin="0, 20"
+               HorizontalTextAlignment="Center" />
 
-			<Label x:Name="visaMer" Text="Hej"> </Label>
+            <Label Text="Check in:" />
 
-			<Button Text="Show room details" Clicked="btn_RoomDetails"></Button>
-			
+            <DatePicker x:Name="CheckInDatePicker"
+                    Format="D"
+                    Margin="30, 0, 0, 30"
+                    DateSelected="OnDateSelected" />
 
-			<Button Text="Book this room" Clicked="btn_BookThisRoom"></Button>
-			
-			
-		</StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+            <Label Text="Check out:" />
+
+            <DatePicker x:Name="CheckOutDatePicker"
+                    MinimumDate="{Binding Source={x:Reference CheckInDatePicker},
+                                          Path=Date}"
+                    Format="D"
+                    Margin="30, 0, 0, 30"
+                    DateSelected="OnDateSelected" />
+
+            <Label x:Name="resultLabel"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+            <Button x:Name="ShowAvailableRooms" 
+                    Text="Show Available rooms" 
+                    Clicked="ShowAvailableRoomsButton_Clicked" />
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage> 

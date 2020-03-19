@@ -17,19 +17,27 @@ namespace IsaakHotel
             InitializeComponent();
         }
 
-        private void btn_AvailibleRooms(object sender, EventArgs e)
+        void OnDateSelected(object sender, DateChangedEventArgs args)
         {
-            visaMer.Text = ("Nu visas tillgängliga rum");
+            Recalculate();
         }
 
-        private void btn_RoomDetails(object sender, EventArgs e)
+        void OnSwitchToggled(object sender, ToggledEventArgs args)
         {
-            visaMer.Text = ("Nu visas mer info om rummet");
+            Recalculate();
         }
 
-        private async void btn_BookThisRoom(object sender, EventArgs e)
+        void Recalculate()
         {
-            await Navigation.PushAsync(new NavigationPage(new ConfirmationPage()));
+            TimeSpan timeSpan = CheckOutDatePicker.Date - CheckInDatePicker.Date;
+
+            resultLabel.Text = String.Format("Book for {0} night{1}",
+                                                timeSpan.Days, timeSpan.Days == 1 ? "" : "s");
+        }
+
+        private void ShowAvailableRoomsButton_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
