@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "600472460542",
-    "firebase_url": "https://isaachotel-b0409.firebaseio.com",
-    "project_id": "isaachotel-b0409",
-    "storage_bucket": "isaachotel-b0409.appspot.com"
+    "project_number": "1091298940734",
+    "firebase_url": "https://isaakhotel-89b57.firebaseio.com",
+    "project_id": "isaakhotel-89b57",
+    "storage_bucket": "isaakhotel-89b57.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:600472460542:android:a877e5538c72c0d76b99af",
+        "mobilesdk_app_id": "1:1091298940734:android:bda36fa58f775d9ef1fe6f",
         "android_client_info": {
-          "package_name": "com.companyname.isaakhotel"
+          "package_name": "com.newtondotnet.isaakhotel"
         }
       },
       "oauth_client": [
         {
-          "client_id": "600472460542-fpllvk8njumn02ovdutt1gmt3kq8pmif.apps.googleusercontent.com",
+          "client_id": "1091298940734-955buol6981f3f5qu6lch4ogeorjq99a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDiM6f_NRZUF5noVcFy1yJM_mZgstGcf5Q"
+          "current_key": "AIzaSyBPeCRrVyViC-Fd87RxsiQFV2dWAlwYa9E"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "600472460542-fpllvk8njumn02ovdutt1gmt3kq8pmif.apps.googleusercontent.com",
+              "client_id": "1091298940734-955buol6981f3f5qu6lch4ogeorjq99a.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
