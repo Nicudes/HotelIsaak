@@ -1,6 +1,4 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace IsaakHotelStaff
 {
@@ -10,7 +8,7 @@ namespace IsaakHotelStaff
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new CleanerPages.CleanerHomePage());
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

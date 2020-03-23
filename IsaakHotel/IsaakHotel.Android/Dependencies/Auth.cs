@@ -1,17 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
-using Firebase.Auth;
+﻿using Firebase.Auth;
 using IsaakHotel.Droid.Dependencies;
 using IsaakHotel.ViewModel.Helpers;
+using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 [assembly: Dependency(typeof(Auth))]
@@ -45,7 +36,7 @@ namespace IsaakHotel.Droid.Dependencies
             catch (Exception ex)
             {
 
-                throw new Exception("An uknown error occurred, please try again");
+                throw new Exception($"An unknown error occurred, please try again. Exception: {ex.Message}");
             }
         }
 
@@ -90,7 +81,7 @@ namespace IsaakHotel.Droid.Dependencies
             catch (Exception ex)
             {
 
-                throw new Exception("An uknown error occurred, please try again");
+                throw new Exception($"An unknown error occurred, please try again. Exception: {ex.Message}");
             }
         }
     }
