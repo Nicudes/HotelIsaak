@@ -90,13 +90,19 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <AndroidResource Include="Resources\drawable\EpicView.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IsaakHotel\IsaakHotel.csproj">
       <Project>{193843f3-5f5d-41ee-ac64-4922e3bf353c}</Project>
       <Name>IsaakHotel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\hotellbild.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\UserIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

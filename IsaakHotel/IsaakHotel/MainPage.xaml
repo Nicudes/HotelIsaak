@@ -4,7 +4,15 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="IsaakHotel.MainPage">
+             x:Class="IsaakHotel.MainPage"
+             NavigationPage.HasNavigationBar="True"
+             BackgroundImageSource="EpicView.jpg">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="UserButton"
+             Text="User"
+             Icon="UserIcon.png" 
+                     Clicked="UserButton_Clicked" />
+    </ContentPage.ToolbarItems>
 
     <StackLayout>
         <!-- Place new controls here -->
@@ -12,13 +20,29 @@
 		<Image Source="https://lh3.googleusercontent.com/proxy/Uj78kYNE9nG7Kt0o-lG-xfWoXvnCPMvOCHK3E5xNCMc8i3jnWL2Jo7NzJB6NLPi7xI5wPU-66zlUIud2-u7BQnV3mP6LUM4S4JjJPKgFchyU8-mU7w2kpeXV"
        Aspect="AspectFit"
        HorizontalOptions="Center" />
-		
-		<Button Text="New booking" Clicked="btn_NewBooking"> </Button>
+        <Label Text="Isaac Hotel" FontSize="55" 
+               VerticalTextAlignment="Center"
+               Margin="60,50,0,0"
+               FontAttributes="Bold"
+               TextDecorations="Underline"
+               TextColor="NavajoWhite"/>
 
-		<Button Text="Sign in" Clicked="btn_SignIn"></Button>
-		<Button Text="RegisterNewUser" Clicked="btn_RegisterNewUser"></Button>
-		<Button Text="Reviews" Clicked="btn_Reviews"></Button>
-		<Button Text="About Us" Clicked="btn_AboutUs"></Button>
+        <Button Text="Start booking" Clicked="btn_NewBooking"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Margin="14,370"
+                BackgroundColor="Black"
+                FontAttributes="Bold"
+                BorderColor="Aqua"
+                BorderWidth="1"
+                CornerRadius="6"
+                TextColor="White"/>
+
+
+        <Button Text="Sign in" Clicked="btn_SignIn" IsVisible="False"></Button>
+        <Button Text="RegisterNewUser" Clicked="btn_RegisterNewUser" IsVisible="False"></Button>
+        <Button Text="Reviews" Clicked="btn_Reviews" IsVisible="False"></Button>
+        <Button Text="About Us" Clicked="btn_AboutUs" IsVisible="False"></Button>
 
 		<!--<ListView>
 				<ListView.ItemsSource>
