@@ -5,22 +5,43 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="IsaakHotel.CustomerInfo">
-    <ContentPage.Content>
-        <StackLayout>
-			
-			
-            <Label Text="Welcome to CustomerInfo!"
+	<ContentPage.Content>
+		<StackLayout Margin="15">
+
+
+			<Label Text="Welcome to CustomerInfo!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
 
-			<Entry Text="Name " Placeholder="Enter name here"> </Entry>
-			<Entry Text="Phone no " Placeholder="Enter phone number"></Entry>
-			<Entry Text="Mail " Placeholder="Enter mail here"></Entry>
-			<Entry Text="Nationality " Placeholder="Enter nationality here"></Entry>
 
-			<Button Text="Create user" Clicked="btn_SaveInfo"></Button>
+			<Entry x:Name="Name" Text="Customer Name" IsReadOnly="True"
+				   HorizontalTextAlignment="Center"
+				   
+				   ></Entry>
+
+			<Entry x:Name="Phone" Text="Customer Phone" IsReadOnly="True"
+				   HorizontalTextAlignment="Center"
+				   
+				   ></Entry>
+
+			<Entry x:Name="Mail" Text="Customer Mail" IsReadOnly="True"
+				   HorizontalTextAlignment="Center"
+				   
+				   ></Entry>
+
+			<Entry x:Name="Nationality" Text="Customer Nation" IsReadOnly="True"
+				   HorizontalTextAlignment="Center"
+			
+				   ></Entry>
+
+
+
+			<Button x:Name="EditInfo" Text="Edit info" Clicked="btn_EditInfo"></Button>
+
+
+			<Button x:Name="Saveinfo" Text="Save info" Clicked="btn_SaveInfo"></Button>
 
 		</StackLayout>
-    </ContentPage.Content>
+	</ContentPage.Content>
 </ContentPage>

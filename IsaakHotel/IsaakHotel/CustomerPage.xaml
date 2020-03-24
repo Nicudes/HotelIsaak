@@ -6,20 +6,153 @@
              mc:Ignorable="d"
              x:Class="IsaakHotel.CustomerPage"
              Title="My User Page">
-    <ContentPage.Content>
-        <StackLayout>
+	<ContentPage.Content>
+		<Grid Margin="15">
+
+			<Grid.RowDefinitions>
+				<RowDefinition Height="25"></RowDefinition>
+				<RowDefinition Height="120"></RowDefinition>
+				<RowDefinition Height="25"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="40"></RowDefinition>
+				<RowDefinition Height="*"></RowDefinition>
+				<RowDefinition Height="15"></RowDefinition>
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+
+
+			<BoxView Grid.Column="0" Grid.ColumnSpan="5"
+					 Grid.Row="7"></BoxView>
+
+			<BoxView Grid.Column="0" Grid.RowSpan="7"
+					 ></BoxView>
+
+			<BoxView Grid.Column="1" Grid.RowSpan="7"
+					 ></BoxView>
 			
-            
-			<Label Text="Welcome to CustomerPage!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+			<BoxView Grid.Column="2" Grid.RowSpan="7"
+					 ></BoxView>
 
-            <Button Text="Home" Clicked="btn_Home"/>
-            <Button Text="New Booking" Clicked="btn_NewBooking"/>
-            <Button Text="Updateinfo" Clicked="btn_UpdateInfo"/>
-            <Button Text="User Bookings" Clicked="btn_UserBookings"/>
+			<BoxView Grid.Column="3" Grid.RowSpan="7"
+					 ></BoxView>
+
+			<BoxView Grid.Column="4" Grid.RowSpan="7"
+					 ></BoxView>
+
+			<Label Text="This is customerPage"
+				   FontSize="34" FontFamily="Bold"
+				   Grid.Row="1" Grid.ColumnSpan="5"
+				   HorizontalOptions="Fill" 
+				   VerticalOptions="Center"
+				   BackgroundColor="AliceBlue"
+				   Margin="10"
+				   ></Label>
 
 
-        </StackLayout>
-    </ContentPage.Content>
+			<Frame BackgroundColor="LightBlue"
+				   Grid.Column="0" Grid.Row="2"
+				   Grid.RowSpan="6" Grid.ColumnSpan="5"
+				   VerticalOptions="Fill" BorderColor="Black"
+				   HorizontalOptions="Fill" Padding="5"
+					Margin="25"
+				   ></Frame>
+
+
+			<Label x:Name="Name"
+				Text="Name: " BackgroundColor="AntiqueWhite"
+				   Grid.Column="1" Grid.Row="3"
+				   Grid.ColumnSpan="3" 
+				   FontSize="20" FontAttributes="Bold"
+				   VerticalOptions="Fill" VerticalTextAlignment="Center"
+				   HorizontalOptions="Fill" Margin="5"
+				></Label>
+
+			<Label x:Name="Phone"
+				Text="Phone: " BackgroundColor="AntiqueWhite"
+				   Grid.Column="1" Grid.Row="4"
+				   Grid.ColumnSpan="3" 
+				   FontSize="20" FontAttributes="Bold"
+				   VerticalOptions="Fill" VerticalTextAlignment="Center"
+				   HorizontalOptions="Fill" Margin="5"
+				   ></Label>
+
+			<Label x:Name="Mail"
+				Text="Mail: " BackgroundColor="AntiqueWhite"
+				   Grid.Column="1" Grid.Row="5"
+				   Grid.ColumnSpan="3" 
+				   FontSize="20" FontAttributes="Bold"
+				   VerticalOptions="Fill" VerticalTextAlignment="Center"
+				   HorizontalOptions="Fill" Margin="5"
+				   ></Label>
+
+			<Label x:Name="Nationality"
+				Text="Nationality: " BackgroundColor="AntiqueWhite"
+				   Grid.Column="1" Grid.Row="6"
+				   Grid.ColumnSpan="3" 
+				   FontSize="20" FontAttributes="Bold"
+				   VerticalOptions="Fill" VerticalTextAlignment="Center"
+				   HorizontalOptions="Fill" Margin="5"
+				   ></Label>
+
+
+
+			<Button Text="Update info" Clicked="btn_UpdateInfo"
+					Grid.Column="0" Grid.Row="10"
+					Grid.ColumnSpan="2"
+					WidthRequest="200"
+				   HorizontalOptions="Center"
+				   VerticalOptions="StartAndExpand"
+				   BackgroundColor="AliceBlue"
+					
+			></Button>
+
+			<Button Text="User Bookings" Clicked="btn_UserBookings"
+					Grid.Column="3" Grid.Row="10"
+					Grid.ColumnSpan="2"
+					WidthRequest="200"
+				   HorizontalOptions="Center"
+				   VerticalOptions="EndAndExpand"
+				   BackgroundColor="AliceBlue"
+					
+			></Button>
+
+			<Button Text="Home" Clicked="btn_Home"
+					Grid.Column="0" Grid.Row="9"
+					Grid.ColumnSpan="2"
+					WidthRequest="150"
+				   HorizontalOptions="Center"
+				   VerticalOptions="EndAndExpand"
+				   BackgroundColor="AliceBlue"
+					></Button>
+
+			<Button Text="New Booking" Clicked="btn_NewBooking"
+					Grid.Column="3" Grid.Row="9"
+					Grid.ColumnSpan="2" 
+					WidthRequest="150"
+				   HorizontalOptions="Center"
+				   VerticalOptions="StartAndExpand"
+				   BackgroundColor="AliceBlue"
+					></Button>
+
+
+		</Grid>
+
+
+
+
+
+	</ContentPage.Content>
 </ContentPage>

@@ -21,5 +21,24 @@ namespace IsaakHotel
         {
             await Navigation.PushAsync(new NavigationPage(new CustomerPage()));
         }
+
+        private void btn_EditInfo(object sender, EventArgs e)
+        {
+            Name.IsReadOnly = false;
+            Name.Text = "";
+            Name.Placeholder = "Enter name";
+
+            Phone.IsReadOnly = false;
+            Phone.Text = "";
+            Phone.Placeholder = "Enter phone number";
+
+            Mail.IsReadOnly = false;
+            Mail.Text = "";
+            Mail.Placeholder = "Enter mail here";
+
+            Nationality.IsReadOnly = false;
+            Nationality.Text = "";
+            Nationality.Placeholder = "Enter nationality here";
+        }
     }
 }
