@@ -27,7 +27,7 @@ namespace IsaakHotel
 
         private async void btn_SignIn(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new NavigationPage(new CustomerPage()));
+           
         }
 
         private async void btn_RegisterNewUser(object sender, EventArgs e)
@@ -43,6 +43,11 @@ namespace IsaakHotel
         private async void btn_AboutUs(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new NavigationPage(new BookPage()));
+        }
+
+        private async void UserButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new NavigationPage(new CustomerPage()));
         }
     }
 }

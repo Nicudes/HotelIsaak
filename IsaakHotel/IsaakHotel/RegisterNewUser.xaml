@@ -20,7 +20,7 @@
 
             <StackLayout x:Name="loginStackLayout"
                          VerticalOptions="Center"
-                         IsVisible="True"
+                         IsVisible="False"
                          BindingContext="{StaticResource vm}">
                 <Entry Placeholder="Email"
                        Keyboard="Email"
@@ -53,7 +53,7 @@
             <StackLayout x:Name="registerStackLayout"
                          VerticalOptions="Center"
                          BindingContext="{StaticResource vm}"
-                         IsVisible="False">
+                         IsVisible="True">
 
                 <Label Text="Welcome to RegisterNewUser!"
                 VerticalOptions="CenterAndExpand" 
@@ -77,13 +77,7 @@
                             <TapGestureRecognizer Tapped="LoginLabel_Tapped"/>
                         </Label.GestureRecognizers>
                     </Label>
-                    
-		            <Entry Text="Name "  Placeholder="Enter name here"></Entry>
-		            <Entry Text="Phone no " Placeholder="Enter phone number"></Entry>
-		        	<Entry Text="Mail " Placeholder="Enter mail here"></Entry>
-		        	<Entry Text="Nationality " Placeholder="Enter nationality here"></Entry>
-
-
+               
                 </StackLayout>
 
            
